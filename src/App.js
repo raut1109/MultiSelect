@@ -1,16 +1,13 @@
-import React from 'react';
+import './App.css';
+ 
 import MultiSelect from './Components/MultiSelect';
 
 function App() {
-  const selectedValues = [1, 2, 3];
-  const isReadOnly = false;
 
   return (
-    <div>
-      <h1>MultiSelect Component Example</h1>
-      <MultiSelect value={selectedValues} readonly={isReadOnly} />
-  
-      
+    <div className="flex justify-center ">
+ 
+      <MultiSelect value={[1, 2, 3]} readonly={true} />
     </div>
   );
 }
